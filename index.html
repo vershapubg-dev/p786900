@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Purusottam Meher – Certified Wellness Coach | Weight Loss & Weight Gain Specialist</title>
+  <meta name="description" content="Transform your health with Purusottam Meher, Certified Wellness Coach. 1-on-1 personalized coaching for sustainable weight loss, healthy weight gain, custom nutrition, and daily WhatsApp support.">
+  <meta name="theme-color" content="#08110e">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & GLOBAL RESET
+       ========================================================================== */
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --primary-deep: #064e3b;
+      --primary-light: #d1fae5;
+      --accent: #f59e0b;
+      --accent-glow: rgba(245, 158, 11, 0.35);
+      --wa-green: #25d366;
+      --wa-dark: #128c7e;
+
+      --bg-dark: #070f0c;
+      --bg-card: #0d1e18;
+      --bg-card-hover: #132a22;
+      --bg-card-border: rgba(16, 185, 129, 0.22);
+      --bg-surface: #0a1713;
+
+      --text-main: #f3fdf8;
+      --text-muted: #9bb0a8;
+      --text-dim: #647a72;
+      --border-color: rgba(255, 255, 255, 0.08);
+
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Outfit', sans-serif;
+
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-pill: 9999px;
+
+      --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.2);
+      --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.35);
+      --shadow-lg: 0 25px 60px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 35px rgba(16, 185, 129, 0.28);
+
+      --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Ambient background lighting */
+    body::before {
+      content: "";
+      position: fixed;
+      top: -15%;
+      left: -10%;
+      width: 55vw;
+      height: 55vw;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.14) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(90px);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: -15%;
+      right: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.09) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(90px);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.18;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #ffffff 20%, #34d399 70%, #10b981 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-text {
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    section {
+      padding: 85px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Section Header */
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 50px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 14px;
+    }
+
+    .badge-gold {
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .section-title {
+      font-size: clamp(28px, 4.5vw, 42px);
+      margin-bottom: 14px;
+    }
+
+    .section-desc {
+      font-size: clamp(15px, 2vw, 17px);
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: var(--font-body);
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 32px rgba(16, 185, 129, 0.5);
+      background: linear-gradient(135deg, #34d399, #10b981);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.07);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: translateY(-2px);
+    }
+
+    .btn-wa {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-wa:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 14px 32px rgba(37, 211, 102, 0.55);
+    }
+
+    .btn-sm {
+      padding: 8px 18px;
+      font-size: 13px;
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    /* ==========================================================================
+       PHOTO ANIMATIONS ENGINE (SHIMMER, HOVER GLOW & PULSE)
+       ========================================================================== */
+    .photo-card-animated {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background: #0d1e18;
+      border: 1px solid rgba(16, 185, 129, 0.22);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.45s ease;
+    }
+
+    /* Light sweep / sheen animation across photos */
+    .photo-card-animated::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -80%;
+      width: 60%;
+      height: 200%;
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.22) 50%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: rotate(25deg);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+    }
+
+    .photo-card-animated:hover::after {
+      opacity: 1;
+      animation: lightSweep 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes lightSweep {
+      0% { left: -80%; }
+      100% { left: 140%; }
+    }
+
+    .photo-card-animated:hover {
+      transform: translateY(-8px) scale(1.015);
+      border-color: var(--primary);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55), 0 0 30px rgba(16, 185, 129, 0.3);
+      z-index: 3;
+    }
+
+    .photo-card-animated img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+    }
+
+    .photo-card-animated:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Photo overlay with badge & caption */
+    .photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(6, 14, 11, 0.92) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px;
+      opacity: 0.95;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .photo-badge-tag {
+      align-self: flex-start;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      background: rgba(16, 185, 129, 0.88);
+      backdrop-filter: blur(6px);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      margin-bottom: 6px;
+    }
+
+    .photo-badge-tag.gold {
+      background: rgba(245, 158, 11, 0.9);
+    }
+
+    .photo-caption-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .photo-zoom-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(7, 15, 12, 0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 15px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: var(--transition-smooth);
+      pointer-events: none;
+    }
+
+    .photo-card-animated:hover .photo-zoom-btn {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(7, 15, 12, 0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 75px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-heading);
+      font-size: 19px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .nav-brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981, #064e3b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+      flex-shrink: 0;
+    }
+
+    .nav-brand-text small {
+      display: block;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      font-size: 22px;
+      cursor: pointer;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==========================================================================
+       HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding: 135px 0 80px;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: clamp(34px, 5.2vw, 58px);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+
+    .hero-lead {
+      font-size: clamp(15px, 2vw, 19px);
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 38px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding-top: 26px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-stat-item h4 {
+      font-size: clamp(22px, 3vw, 34px);
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .hero-stat-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* Hero Visual Card / Coach Showcase */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    .coach-card-featured {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.18) 0%, rgba(13, 30, 24, 0.9) 100%);
+      padding: 12px;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(16, 185, 129, 0.22);
+      animation: heroFloat 6s ease-in-out infinite;
+    }
+
+    @keyframes heroFloat {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .coach-img-wrapper {
+      position: relative;
+      border-radius: calc(var(--radius-xl) - 6px);
+      overflow: hidden;
+      background: #08110e;
+    }
+
+    .coach-img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .coach-card-featured:hover .coach-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    /* Floating Badges on Hero Image */
+    .floating-badge {
+      position: absolute;
+      background: rgba(13, 30, 24, 0.94);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      border-radius: var(--radius-lg);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: var(--shadow-lg);
+      z-index: 3;
+      animation: floatBadge 4s ease-in-out infinite alternate;
+    }
+
+    .floating-badge-1 {
+      top: 20px;
+      left: -20px;
+    }
+
+    .floating-badge-2 {
+      bottom: 25px;
+      right: -20px;
+      animation-delay: 2s;
+    }
+
+    .badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .badge-icon.green {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34d399;
+    }
+
+    .badge-icon.gold {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+    }
+
+    .badge-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .badge-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    @keyframes floatBadge {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+
+    /* ==========================================================================
+       MEET COACH PURUSOTTAM MEHER SECTION (CEO PHOTOS & STORY)
+       ========================================================================== */
+    .coach-section {
+      background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-surface) 50%, var(--bg-dark) 100%);
+    }
+
+    .coach-main-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(20px, 4vw, 44px);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 45px;
+    }
+
+    .coach-profile-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .coach-portrait-box {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid rgba(16, 185, 129, 0.35);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      background: #08110e;
+    }
+
+    .coach-portrait-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .coach-portrait-box:hover img {
+      transform: scale(1.06);
+    }
+
+    .coach-bio-title {
+      font-size: clamp(24px, 3.5vw, 34px);
+      margin-bottom: 6px;
+    }
+
+    .coach-tagline {
+      font-size: 15px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .coach-bio-text {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 22px;
+      line-height: 1.7;
+    }
+
+    .coach-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .coach-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+    }
+
+    .coach-feature-icon {
+      font-size: 18px;
+      color: var(--primary);
+    }
+
+    .coach-feature-text {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    /* Coach Gallery Grid (Respecting portrait and landscape naturally) */
+    .coach-gallery-title {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .coach-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .coach-gallery-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ==========================================================================
+       SERVICES SECTION ("servers like weight loss weight gain and all")
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .service-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(16, 185, 129, 0.45);
+      transform: translateY(-7px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45), 0 0 30px rgba(16, 185, 129, 0.22);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: var(--radius-md);
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease, background 0.4s ease;
+    }
+
+    .service-card:hover .service-icon-box {
+      transform: scale(1.1) rotate(5deg);
+      background: rgba(16, 185, 129, 0.24);
+    }
+
+    .service-title {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .service-highlights {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .service-highlights li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-main);
+      margin-bottom: 9px;
+    }
+
+    .service-highlights li span {
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .service-action-btn {
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: var(--radius-pill);
+      font-size: 14px;
+      font-weight: 600;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--primary);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: var(--transition-smooth);
+    }
+
+    .service-card:hover .service-action-btn {
+      background: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+    }
+
+    /* ==========================================================================
+       TRANSFORMATIONS & REVIEWS MASONRY ("rev mins revwies" - NO CROPPING!)
+       ========================================================================== */
+    .reviews-section {
+      background: var(--bg-surface);
+      position: relative;
+    }
+
+    .reviews-filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 35px;
+    }
+
+    .filter-btn {
+      padding: 9px 20px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35);
+    }
+
+    /* Multi-column masonry layout: adapts cleanly to 1, 2, 3, or 4 columns! */
+    .reviews-masonry {
+      column-count: 4;
+      column-gap: 20px;
+      width: 100%;
+    }
+
+    .review-masonry-item {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    /* ==========================================================================
+       BMI CALCULATOR SECTION
+       ========================================================================== */
+    .bmi-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(22px, 5vw, 48px);
+      box-shadow: var(--shadow-md);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 13px 16px;
+      font-size: 16px; /* Crucial: 16px prevents iOS Safari from auto-zooming! */
+      font-family: var(--font-body);
+      background: rgba(7, 15, 12, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-md);
+      color: #ffffff;
+      outline: none;
+      transition: var(--transition-smooth);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+      background: rgba(7, 15, 12, 0.95);
+    }
+
+    .form-select option {
+      background: #0d1e18;
+      color: #ffffff;
+    }
+
+    .bmi-result-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: rgba(7, 15, 12, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 34px 22px;
+    }
+
+    .bmi-score {
+      font-size: clamp(52px, 7vw, 78px);
+      font-family: var(--font-heading);
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
+      letter-spacing: -0.04em;
+    }
+
+    .bmi-category {
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .bmi-bar-container {
+      width: 100%;
+      max-width: 360px;
+      position: relative;
+      margin: 14px 0 10px;
+    }
+
+    .bmi-bar {
+      height: 10px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #60a5fa 0% 18%, #34d399 18% 50%, #f59e0b 50% 75%, #ef4444 75% 100%);
+      position: relative;
+    }
+
+    .bmi-dot {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 3px solid #10b981;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.8);
+      transition: left 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .bmi-scale-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-dim);
+      margin-top: 8px;
+    }
+
+    .bmi-tip {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 16px 0 22px;
+      min-height: 44px;
+      max-width: 360px;
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       HOW IT WORKS SECTION
+       ========================================================================== */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .step-card {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-lg);
+      padding: 34px 26px;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .step-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+    }
+
+    .step-number {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
+    }
+
+    .step-title {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .step-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       ON-PAGE CONSULTATION BOOKING SECTION
+       ========================================================================== */
+    .booking-section {
+      background: radial-gradient(circle at center, rgba(16, 185, 129, 0.08) 0%, transparent 70%);
+    }
+
+    .booking-card {
+      max-width: 740px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: var(--radius-xl);
+      padding: clamp(24px, 5vw, 50px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* ==========================================================================
+       POP-UP MODAL (WEIGHT LOSS / WEIGHT GAIN / SERVICES & CLOSE BUTTON)
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 9, 7, 0.84);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.4s ease;
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-container {
+      background: #0d1e18;
+      border: 1px solid rgba(16, 185, 129, 0.38);
+      border-radius: var(--radius-xl);
+      width: 100%;
+      max-width: 560px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 60px rgba(16, 185, 129, 0.28);
+      position: relative;
+      transform: scale(0.9) translateY(20px);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: scale(1) translateY(0);
+    }
+
+    /* Modal Close Button ("clode bottan") */
+    .modal-close-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: var(--transition-smooth);
+      line-height: 1;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(239, 68, 68, 0.25);
+      border-color: #ef4444;
+      color: #ef4444;
+      transform: rotate(90deg) scale(1.1);
+    }
+
+    .modal-header {
+      padding: 30px 30px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+
+    .modal-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--primary);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 10px;
+    }
+
+    .modal-title {
+      font-size: clamp(20px, 3.5vw, 26px);
+      margin-bottom: 6px;
+    }
+
+    .modal-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .modal-body {
+      padding: 24px 30px 30px;
+    }
+
+    .modal-footer-note {
+      font-size: 12px;
+      color: var(--text-dim);
+      text-align: center;
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    /* ==========================================================================
+       ENHANCED FULLSCREEN LIGHTBOX WITH NEXT/PREV CONTROLS & TOUCH SWIPE
+       ========================================================================== */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 8, 6, 0.95);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+      touch-action: pan-y;
+    }
+
+    .lightbox-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      z-index: 2010;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lightbox-close-btn:hover {
+      background: rgba(239, 68, 68, 0.3);
+      border-color: #ef4444;
+      color: #ef4444;
+      transform: scale(1.1) rotate(90deg);
+    }
+
+    /* Lightbox Navigation Buttons (Next / Prev) */
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(13, 30, 24, 0.85);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #ffffff;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2010;
+      transition: var(--transition-smooth);
+      backdrop-filter: blur(10px);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .lightbox-nav-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-50%) scale(1.12);
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+    }
+
+    .lightbox-prev-btn { left: 24px; }
+    .lightbox-next-btn { right: 24px; }
+
+    .lightbox-content {
+      max-width: 92vw;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      border-radius: var(--radius-md);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 45px rgba(16, 185, 129, 0.25);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      transform: scale(0.92);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    }
+
+    .lightbox-overlay.active .lightbox-img {
+      transform: scale(1);
+    }
+
+    .lightbox-meta {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lightbox-caption {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .lightbox-counter {
+      font-size: 12px;
+      color: var(--primary);
+      font-weight: 700;
+      background: rgba(16, 185, 129, 0.15);
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+    }
+
+    /* ==========================================================================
+       MOBILE STICKY BOTTOM QUICK-ACTION BAR (PHONE OPTIMIZATION)
+       ========================================================================== */
+    .mobile-bottom-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(7, 15, 12, 0.94);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+      z-index: 99;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .mobile-bottom-bar-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Floating WhatsApp Button on Desktop */
+    .floating-wa-btn {
+      position: fixed;
+      right: 24px;
+      bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+      z-index: 98;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      animation: pulseGlow 2.5s infinite;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .floating-wa-btn:hover {
+      transform: scale(1.12) rotate(8deg);
+      box-shadow: 0 15px 40px rgba(37, 211, 102, 0.7);
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    footer {
+      background: #040907;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 65px 0 35px;
+      color: var(--text-muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 45px;
+    }
+
+    .footer-brand h3 {
+      font-size: 21px;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+      max-width: 380px;
+      margin-bottom: 18px;
+    }
+
+    .footer-col h4 {
+      font-size: 15px;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 13px;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       SCROLL ANIMATIONS & INTERACTIVE EFFECTS
+       ========================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* ==========================================================================
+       RESPONSIVE OPTIMIZATIONS (PC, TABLET & PHONE)
+       ========================================================================== */
+    @media (max-width: 1100px) {
+      .reviews-masonry {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 36px;
+      }
+
+      .hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .hero-cta-group {
+        justify-content: center;
+      }
+
+      .hero-stats {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .coach-profile-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .coach-portrait-box {
+        max-width: 290px;
+        margin: 0 auto;
+      }
+
+      .coach-features {
+        justify-content: center;
+      }
+
+      .bmi-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 60px 0;
+      }
+
+      .navbar {
+        height: 68px;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #070f0c;
+        flex-direction: column;
+        padding: 24px 20px;
+        gap: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transform: translateY(-150%);
+        transition: transform 0.4s ease;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.85);
+      }
+
+      .nav-links.open {
+        transform: translateY(0);
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .floating-badge-1 {
+        left: -8px;
+        top: 10px;
+        padding: 7px 12px;
+      }
+
+      .floating-badge-2 {
+        right: -8px;
+        bottom: 12px;
+        padding: 7px 12px;
+      }
+
+      .reviews-masonry {
+        column-count: 2;
+        column-gap: 14px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      /* Mobile pop-up modal styles */
+      .modal-container {
+        margin: 8px;
+        border-radius: var(--radius-lg);
+      }
+
+      .modal-header {
+        padding: 22px 18px 14px;
+      }
+
+      .modal-body {
+        padding: 16px 18px 22px;
+      }
+
+      .modal-close-btn {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+      }
+
+      /* Show mobile bottom sticky bar and hide desktop floating button */
+      .mobile-bottom-bar {
+        display: block;
+      }
+
+      .floating-wa-btn {
+        display: none;
+      }
+
+      footer {
+        padding-bottom: 90px; /* Space for mobile bottom bar */
+      }
+
+      .lightbox-prev-btn { left: 10px; width: 44px; height: 44px; font-size: 24px; }
+      .lightbox-next-btn { right: 10px; width: 44px; height: 44px; font-size: 24px; }
+    }
+
+    @media (max-width: 480px) {
+      .reviews-masonry {
+        column-count: 1;
+      }
+
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-brand">
+        <div class="nav-brand-icon">🌿</div>
+        <div class="nav-brand-text">
+          Purusottam Meher
+          <small>Certified Wellness Coach</small>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" onclick="closeMobileMenu()">About Coach</a></li>
+        <li><a href="#services" class="nav-link" onclick="closeMobileMenu()">Services</a></li>
+        <li><a href="#reviews" class="nav-link" onclick="closeMobileMenu()">Transformations</a></li>
+        <li><a href="#bmi" class="nav-link" onclick="closeMobileMenu()">BMI Tool</a></li>
+        <li><a href="#how" class="nav-link" onclick="closeMobileMenu()">How It Works</a></li>
+        <li><a href="#book" class="nav-link" onclick="closeMobileMenu()">Book Call</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" onclick="openModal('General Consultation')">
+          Book Consultation
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span>🌿</span> 100% Personalized Health & Fitness Mentorship
+        </div>
+        <h1 class="hero-title">
+          Feel Stronger. <br>
+          <span class="gradient-text">Live Healthier.</span> <br>
+          Transform for Life.
+        </h1>
+        <p class="hero-lead">
+          Achieve guaranteed sustainable <strong>Weight Loss</strong>, healthy <strong>Weight Gain</strong>, and lean fitness. Customized meal plans, practical daily habits, and direct 1-on-1 WhatsApp guidance by Coach Purusottam Meher.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary" onclick="openModal('Weight Loss')">
+            <span>🔥</span> Book Free Consultation
+          </button>
+          <a href="#reviews" class="btn btn-secondary">
+            <span>⭐</span> See Real Results
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <h4>500+</h4>
+            <p>Happy Clients Transformed</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>98%</h4>
+            <p>Satisfaction & Goal Success</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>1-on-1</h4>
+            <p>Daily WhatsApp Tracking</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (CEO Photo) -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="coach-card-featured" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM.jpeg', 'Purusottam Meher – Certified Wellness Coach')">
+          <div class="coach-img-wrapper">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM.jpeg" alt="Purusottam Meher - Wellness Coach">
+          </div>
+
+          <!-- Floating Badges with Micro-Animations -->
+          <div class="floating-badge floating-badge-1">
+            <div class="badge-icon green">🏆</div>
+            <div>
+              <div class="badge-title">Purusottam Meher</div>
+              <div class="badge-sub">Certified Wellness Coach</div>
+            </div>
+          </div>
+
+          <div class="floating-badge floating-badge-2">
+            <div class="badge-icon gold">⭐</div>
+            <div>
+              <div class="badge-title">5.0 Star Coaching</div>
+              <div class="badge-sub">Guaranteed Real Results</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MEET COACH PURUSOTTAM MEHER SECTION (CEO PHOTOS & STORY)
+       ========================================================================== -->
+  <section class="coach-section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge">Meet Your Coach</div>
+        <h2 class="section-title">Your Dedicated Health & Wellness Mentor</h2>
+        <p class="section-desc">
+          No starving, no unrealistic crash diets. Get personalized health guidance tailored to your body type, food taste, and everyday routine.
+        </p>
+      </div>
+
+      <!-- Main Profile Box -->
+      <div class="coach-main-card reveal">
+        <div class="coach-profile-grid">
+          <div class="coach-portrait-box photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (2).jpeg', 'Coach Purusottam Meher')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (2).jpeg" alt="Coach Purusottam Meher in action">
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Certified Coach</span>
+              <div class="photo-caption-text">Purusottam Meher</div>
+            </div>
+          </div>
+
+          <div class="coach-bio-info">
+            <h3 class="coach-bio-title">Purusottam Meher</h3>
+            <div class="coach-tagline">Founder & Head Wellness Coach</div>
+            <p class="coach-bio-text">
+              "My mission is simple: to make healthy living enjoyable, accessible, and sustainable for everyone. Whether you want to shed stubborn belly fat, build lean muscle and gain healthy weight, or reset your energy levels, I provide step-by-step guidance and daily accountability directly on WhatsApp."
+            </p>
+
+            <div class="coach-features">
+              <div class="coach-feature-item">
+                <span class="coach-feature-icon">🥗</span>
+                <span class="coach-feature-text">No Crash Diets</span>
+              </div>
+              <div class="coach-feature-item">
+                <span class="coach-feature-icon">📱</span>
+                <span class="coach-feature-text">Daily WhatsApp Support</span>
+              </div>
+              <div class="coach-feature-item">
+                <span class="coach-feature-icon">💪</span>
+                <span class="coach-feature-text">Custom Home/Gym Plans</span>
+              </div>
+              <div class="coach-feature-item">
+                <span class="coach-feature-icon">✨</span>
+                <span class="coach-feature-text">Long-term Habit Coaching</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" onclick="openModal('Meet Coach Consultation')">
+              Start Your Journey with Coach Purusottam
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coach Photo Showcase (All CEO photos with animated cards & natural aspect ratio) -->
+      <h3 class="coach-gallery-title reveal">Coach Purusottam in Action & Lifestyle</h3>
+      <div class="coach-gallery-grid">
+        <div class="coach-gallery-item reveal">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM.jpeg', 'Purusottam Meher – Wellness Coach')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM.jpeg" alt="Purusottam Meher">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Wellness Coach</span>
+              <div class="photo-caption-text">🌿 Personalized Mentorship</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-gallery-item reveal reveal-delay-1">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (1).jpeg', 'Fitness & Discipline – Purusottam Meher')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (1).jpeg" alt="Purusottam Meher Fitness">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Fitness Mentor</span>
+              <div class="photo-caption-text">💪 Strength & Form</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-gallery-item reveal reveal-delay-2">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (2).jpeg', 'Lifestyle & Nutrition Guidance')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.20 PM (2).jpeg" alt="Purusottam Meher Coaching">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">1-on-1 Guidance</span>
+              <div class="photo-caption-text">🥗 Nutrition Specialist</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-gallery-item reveal">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.21 PM.jpeg', 'Healthy Living Advocate')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.21 PM.jpeg" alt="Purusottam Meher Lifestyle">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Healthy Habits</span>
+              <div class="photo-caption-text">✨ Daily Wellness</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-gallery-item reveal reveal-delay-1">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.21 PM (1).jpeg', 'Strength & Transformation Coach')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.21 PM (1).jpeg" alt="Purusottam Meher Training">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Strength & Energy</span>
+              <div class="photo-caption-text">🏋️ Active Lifestyle</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coach-gallery-item reveal reveal-delay-2">
+          <div class="photo-card-animated" onclick="openLightboxBySrc('ceo/WhatsApp Image 2026-11-25 at 6.49.22 PM.jpeg', 'Active Healthy Lifestyle')">
+            <img src="ceo/WhatsApp Image 2026-11-25 at 6.49.22 PM.jpeg" alt="Purusottam Meher Outdoor">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Active Living</span>
+              <div class="photo-caption-text">🌟 Natural Vitality</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION ("servers like weight loss weight gain and all")
+       ========================================================================== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge">Coaching Programs</div>
+        <h2 class="section-title">Specialized Services for Every Body Goal</h2>
+        <p class="section-desc">
+          Choose the service that fits your journey. Every program is customized with personalized nutrition, habit tracking, and continuous WhatsApp support.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Weight Loss -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-icon-box">🔥</div>
+            <h3 class="service-title">Weight Loss Coaching</h3>
+            <p class="service-desc">
+              Lose stubborn fat and inches naturally without starvation. Enjoy balanced, fulfilling meals while accelerating your metabolism.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> Targeted Belly Fat & Inch Loss</li>
+              <li><span>✓</span> Calorie & Macronutrient Balancing</li>
+              <li><span>✓</span> No Extreme Starvation or Weakness</li>
+              <li><span>✓</span> Weekly Weight & Progress Reviews</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Weight Loss')">
+            Get Weight Loss Plan <span>›</span>
+          </button>
+        </div>
+
+        <!-- Service 2: Weight Gain -->
+        <div class="service-card reveal reveal-delay-1">
+          <div>
+            <div class="service-icon-box">💪</div>
+            <h3 class="service-title">Healthy Weight Gain</h3>
+            <p class="service-desc">
+              Build lean muscle and healthy body mass for underweight or hard-gainer physiques with nutrient-dense, appetite-friendly diets.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> Calorie Surplus with Clean Whole Foods</li>
+              <li><span>✓</span> Healthy Muscle & Frame Building</li>
+              <li><span>✓</span> Improved Energy & Stamina</li>
+              <li><span>✓</span> Digestion & Gut Health Optimization</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Weight Gain')">
+            Get Weight Gain Plan <span>›</span>
+          </button>
+        </div>
+
+        <!-- Service 3: Muscle & Fitness -->
+        <div class="service-card reveal reveal-delay-2">
+          <div>
+            <div class="service-icon-box">🏋️</div>
+            <h3 class="service-title">Muscle &amp; Fitness</h3>
+            <p class="service-desc">
+              Tone your body, sculpt lean muscle, and increase athletic stamina with structured home or gym workout routines.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> Progressive Home / Gym Exercise Guides</li>
+              <li><span>✓</span> High-Protein Balanced Nutrition</li>
+              <li><span>✓</span> Posture, Mobility & Core Conditioning</li>
+              <li><span>✓</span> Faster Muscle Recovery & Power</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Muscle & Fitness')">
+            Get Fitness Plan <span>›</span>
+          </button>
+        </div>
+
+        <!-- Service 4: Custom Diet Planning -->
+        <div class="service-card reveal">
+          <div>
+            <div class="service-icon-box">🥗</div>
+            <h3 class="service-title">Personalized Diet Plan</h3>
+            <p class="service-desc">
+              Easy-to-follow meal charts tailored around foods you love and find in your local kitchen. Vegetarian, vegan, and non-veg options.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> Simple, Affordable Everyday Ingredients</li>
+              <li><span>✓</span> Family & Work-Friendly Meal Timing</li>
+              <li><span>✓</span> Healthy Indian & Continental Recipes</li>
+              <li><span>✓</span> Craving Management Strategies</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Diet Planning')">
+            Get Diet Plan <span>›</span>
+          </button>
+        </div>
+
+        <!-- Service 5: Lifestyle & Stress Coaching -->
+        <div class="service-card reveal reveal-delay-1">
+          <div>
+            <div class="service-icon-box">🧘</div>
+            <h3 class="service-title">Lifestyle &amp; Hormonal Balance</h3>
+            <p class="service-desc">
+              Overcome fatigue, improve sleep quality, support thyroid/PCOS health, and reduce daily stress through mindful holistic routines.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> Deep Sleep & Energy Optimization</li>
+              <li><span>✓</span> Stress & Cortisol Reduction Habits</li>
+              <li><span>✓</span> Metabolism & Hormone Support</li>
+              <li><span>✓</span> Hydration & Daily Step Tracking</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Lifestyle & Stress')">
+            Get Lifestyle Plan <span>›</span>
+          </button>
+        </div>
+
+        <!-- Service 6: 1-on-1 Daily WhatsApp Follow-up -->
+        <div class="service-card reveal reveal-delay-2">
+          <div>
+            <div class="service-icon-box">📱</div>
+            <h3 class="service-title">Daily WhatsApp Coaching</h3>
+            <p class="service-desc">
+              Direct, personal access to Coach Purusottam Meher. Never feel lost or stuck with regular check-ins, meal reviews, and motivation.
+            </p>
+            <ul class="service-highlights">
+              <li><span>✓</span> 1-on-1 Direct Chat & Voice Notes</li>
+              <li><span>✓</span> Daily Meal Photo Verifications</li>
+              <li><span>✓</span> Rapid Doubt Clearance</li>
+              <li><span>✓</span> Habit Accountability That Works</li>
+            </ul>
+          </div>
+          <button class="service-action-btn" onclick="openModal('Online Follow-up')">
+            Join WhatsApp Coaching <span>›</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CLIENT TRANSFORMATIONS & REVIEWS MASONRY ("rev mins revwies" - NO CROPPING!)
+       ========================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge badge-gold">Real Proof & Results</div>
+        <h2 class="section-title">Client Transformations & Verified Reviews</h2>
+        <p class="section-desc">
+          Browse real before-and-after results, weight loss achievements, healthy weight gain transformations, and WhatsApp feedback from people coached by Purusottam Meher.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="reviews-filter-bar reveal">
+        <button class="filter-btn active" onclick="filterReviews('all', this)">All Results (20)</button>
+        <button class="filter-btn" onclick="filterReviews('loss', this)">Weight Loss</button>
+        <button class="filter-btn" onclick="filterReviews('gain', this)">Weight Gain & Fitness</button>
+        <button class="filter-btn" onclick="filterReviews('chat', this)">Client Chats & Reviews</button>
+      </div>
+
+      <!-- Masonry Grid: Preserves natural aspect ratio without cutting off text or heads! -->
+      <div class="reviews-masonry" id="reviewsGrid">
+        <!-- Review Photo 1 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(0)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.02 PM.jpeg" alt="Weight Loss Transformation – Client Success" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Weight Loss Result</span>
+              <div class="photo-caption-text">⭐ Verified Client Transformation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 2 (WhatsApp Chat Screenshot - tall aspect ratio preserved) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(1)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.03 PM (1).jpeg" alt="WhatsApp Review Chat" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">WhatsApp Review</span>
+              <div class="photo-caption-text">💬 Genuine Client Feedback</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 3 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(2)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.03 PM.jpeg" alt="Fat Loss & Inch Loss Progress" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Fat Loss Result</span>
+              <div class="photo-caption-text">⭐ Incredible Inch Loss</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 4 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(3)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.04 PM.jpeg" alt="Body Transformation" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Transformation</span>
+              <div class="photo-caption-text">⭐ Visible Shape & Health</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 5 -->
+        <div class="review-masonry-item reveal" data-category="gain">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(4)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.04 PM (1).jpeg" alt="Weight Gain & Muscle Progress" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Weight Gain & Tone</span>
+              <div class="photo-caption-text">💪 Muscle & Frame Building</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 6 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(5)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.04 PM (2).jpeg" alt="Belly Fat Loss Success" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Fat Loss</span>
+              <div class="photo-caption-text">⭐ Dramatic Transformation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 7 -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(6)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.05 PM.jpeg" alt="Client Message & Rating" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">Client Praise</span>
+              <div class="photo-caption-text">💬 Happy Client Testimonial</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 8 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(7)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.05 PM (1).jpeg" alt="Weight Loss Journey" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Weight Loss</span>
+              <div class="photo-caption-text">⭐ Real Lifestyle Change</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 9 -->
+        <div class="review-masonry-item reveal" data-category="gain">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(8)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.05 PM (2).jpeg" alt="Healthy Body Transformation" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Fitness Result</span>
+              <div class="photo-caption-text">💪 Lean & Confident</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 10 -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(9)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.06 PM.jpeg" alt="WhatsApp Follow-up Review" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">WhatsApp Review</span>
+              <div class="photo-caption-text">💬 Daily Support Success</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 11 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(10)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.06 PM (1).jpeg" alt="Weight Loss Milestone" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Weight Loss</span>
+              <div class="photo-caption-text">⭐ Inspiring Milestone</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 12 (Tall WhatsApp Chat) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(11)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.49 PM.jpeg" alt="Client Review Chat" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">Verified Review</span>
+              <div class="photo-caption-text">💬 100% Real Satisfaction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 13 (Tall WhatsApp Chat) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(12)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.49 PM (1).jpeg" alt="WhatsApp Gratitude Chat" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">Client Feedback</span>
+              <div class="photo-caption-text">💬 Thank You Coach!</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 14 (Tall WhatsApp Chat) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(13)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.50 PM.jpeg" alt="Body Fat Reduction Discussion" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">Chat Feedback</span>
+              <div class="photo-caption-text">💬 Active Results Discussion</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 15 (Tall WhatsApp Chat) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(14)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.25.50 PM (1).jpeg" alt="Transformation Progress Chat" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">Progress Chat</span>
+              <div class="photo-caption-text">💪 Stronger & Healthier</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 16 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(15)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.26.37 PM.jpeg" alt="Major Weight Loss Transformation" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Weight Loss Result</span>
+              <div class="photo-caption-text">⭐ Dramatic Results</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 17 (Tall WhatsApp Chat) -->
+        <div class="review-masonry-item reveal" data-category="chat">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(16)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.27.01 PM.jpeg" alt="Client WhatsApp Story" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag gold">WhatsApp Review</span>
+              <div class="photo-caption-text">💬 Real Client Story</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 18 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(17)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.27.58 PM.jpeg" alt="Client Success Story" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Transformation</span>
+              <div class="photo-caption-text">⭐ Pure Dedication & Results</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 19 -->
+        <div class="review-masonry-item reveal" data-category="loss">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(18)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.29.08 PM.jpeg" alt="Weight Loss Breakthrough" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Breakthrough Result</span>
+              <div class="photo-caption-text">⭐ Life-Changing Health</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Photo 20 -->
+        <div class="review-masonry-item reveal" data-category="gain">
+          <div class="photo-card-animated" onclick="openLightboxByIndex(19)">
+            <img src="rev/WhatsApp Image 2026-11-25 at 6.30.13 PM.jpeg" alt="Overall Health & Fitness Transformation" loading="lazy">
+            <div class="photo-zoom-btn">🔍</div>
+            <div class="photo-overlay">
+              <span class="photo-badge-tag">Fitness Transformation</span>
+              <div class="photo-caption-text">💪 Full Body Wellness</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 45px;" class="reveal">
+        <button class="btn btn-wa" onclick="openModal('Transformations Inquiry')">
+          💬 Want Similar Results? Chat on WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BMI CALCULATOR SECTION
+       ========================================================================== -->
+  <section id="bmi">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge">Instant Health Tool</div>
+        <h2 class="section-title">Calculate Your BMI &amp; Health Category</h2>
+        <p class="section-desc">
+          Know your Body Mass Index (BMI) in 5 seconds and discover the ideal path for your weight loss or weight gain goals.
+        </p>
+      </div>
+
+      <div class="bmi-card reveal">
+        <!-- Input Form -->
+        <div>
+          <div class="form-group">
+            <label class="form-label" for="calcHeight">Your Height (in centimeters)</label>
+            <input type="number" id="calcHeight" class="form-input" placeholder="e.g. 170" inputmode="decimal">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcWeight">Your Current Weight (in kilograms)</label>
+            <input type="number" id="calcWeight" class="form-input" placeholder="e.g. 72" inputmode="decimal">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="calcGoal">What is your main target?</label>
+            <select id="calcGoal" class="form-select">
+              <option value="Weight Loss">Weight Loss (Lose Fat & Inches)</option>
+              <option value="Weight Gain">Weight Gain (Build Muscle & Mass)</option>
+              <option value="Muscle Tone">Maintain & Tone Up</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary btn-full" onclick="calculateBMI()">
+            Calculate My BMI
+          </button>
+        </div>
+
+        <!-- Result Display -->
+        <div class="bmi-result-panel">
+          <div class="bmi-score" id="bmiNumber">--</div>
+          <div class="bmi-category" id="bmiCategory">Enter height and weight</div>
+
+          <div class="bmi-bar-container">
+            <div class="bmi-bar">
+              <div class="bmi-dot" id="bmiDot"></div>
+            </div>
+            <div class="bmi-scale-labels">
+              <span>Underweight &lt;18.5</span>
+              <span>Normal 18.5-24.9</span>
+              <span>Overweight 25-29.9</span>
+              <span>Obese 30+</span>
+            </div>
+          </div>
+
+          <p class="bmi-tip" id="bmiTip">
+            Fill in your height and weight on the left to see your personalized health assessment and coaching recommendation.
+          </p>
+
+          <button id="bmiShareBtn" class="btn btn-wa btn-sm" style="display: none;" onclick="shareBmiWhatsApp()">
+            💬 Discuss My Result with Coach on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOW IT WORKS SECTION
+       ========================================================================== -->
+  <section id="how">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge">Simple 3-Step Process</div>
+        <h2 class="section-title">How Your Transformation Works</h2>
+        <p class="section-desc">
+          Getting started is seamless. Here is how Coach Purusottam Meher guides you from day one to your dream body.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Connect on WhatsApp</h3>
+          <p class="step-desc">
+            Fill the consultation form or tap WhatsApp. We assess your daily routine, food preferences, body metrics, and health goals.
+          </p>
+        </div>
+
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Receive Your Custom Plan</h3>
+          <p class="step-desc">
+            Get your personalized nutrition chart, simple workout schedule (home/gym), and water/sleep targets using affordable home foods.
+          </p>
+        </div>
+
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Daily Mentorship & Results</h3>
+          <p class="step-desc">
+            Send daily meal pictures, track your weight every week, and get continuous plan adjustments until you achieve your dream results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ON-PAGE CONSULTATION BOOKING SECTION
+       ========================================================================== -->
+  <section class="booking-section" id="book">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="badge">Book Consultation</div>
+        <h2 class="section-title">Ready to Transform? Let's Connect.</h2>
+        <p class="section-desc">
+          Fill in your details below. Your request will open directly in WhatsApp so you can talk with Coach Purusottam Meher immediately.
+        </p>
+      </div>
+
+      <div class="booking-card reveal">
+        <form id="onpageConsultForm" onsubmit="handleOnpageSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="bookName">Your Full Name *</label>
+              <input type="text" id="bookName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookPhone">WhatsApp / Mobile Number *</label>
+              <input type="tel" id="bookPhone" class="form-input" placeholder="e.g. 9876543210" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="bookGoal">Your Primary Goal / Service *</label>
+              <select id="bookGoal" class="form-select" required>
+                <option value="Weight Loss">Weight Loss (Lose Fat & Inches)</option>
+                <option value="Weight Gain">Weight Gain (Healthy Muscle & Mass)</option>
+                <option value="Muscle & Fitness">Muscle & Fitness Conditioning</option>
+                <option value="Diet Planning">Customized Diet & Meal Plan</option>
+                <option value="Lifestyle & Stress">Lifestyle & Stress Management</option>
+                <option value="General Consultation">General Health Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookTime">Preferred Time for Chat / Call</label>
+              <select id="bookTime" class="form-select">
+                <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                <option value="Afternoon (12 PM - 5 PM)">Afternoon (12 PM - 5 PM)</option>
+                <option value="Evening (5 PM - 9 PM)">Evening (5 PM - 9 PM)</option>
+                <option value="Anytime on WhatsApp">Anytime on WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="bookWeight">Current Weight (kg) (Optional)</label>
+              <input type="text" id="bookWeight" class="form-input" placeholder="e.g. 74 kg">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookTarget">Target Weight (kg) (Optional)</label>
+              <input type="text" id="bookTarget" class="form-input" placeholder="e.g. 64 kg">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookMessage">Any Medical Condition or Message (Optional)</label>
+            <textarea id="bookMessage" class="form-textarea" rows="3" placeholder="Tell Coach Purusottam about your routine, food habits, or any health conditions..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-wa btn-full">
+            <span>💬</span> Continue on WhatsApp with Coach Purusottam
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       POP-UP MODAL (WEIGHT LOSS / WEIGHT GAIN / SERVICES & CLOSE BUTTON)
+       ========================================================================== -->
+  <div class="modal-overlay" id="popupModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <!-- Modal Close Button ("clode bottan") -->
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Pop-up" onclick="closeModal()">
+        &times;
+      </button>
+
+      <div class="modal-header">
+        <div class="modal-badge">
+          <span>🌿</span> Free Health Consultation
+        </div>
+        <h3 class="modal-title" id="modalTitle">Start Your Transformation Today</h3>
+        <p class="modal-subtitle">
+          Select your goal (Weight Loss, Weight Gain & more). Submitting redirects directly to WhatsApp with Coach Purusottam Meher.
+        </p>
+      </div>
+
+      <div class="modal-body">
+        <form id="popupForm" onsubmit="handlePopupSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="popName">Your Full Name *</label>
+            <input type="text" id="popName" class="form-input" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="popPhone">WhatsApp / Mobile Number *</label>
+            <input type="tel" id="popPhone" class="form-input" placeholder="Enter WhatsApp number (e.g. 9876543210)" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="popService">Select Service / Goal *</label>
+            <select id="popService" class="form-select" required>
+              <option value="Weight Loss">🔥 Weight Loss (Fat Loss & Inch Loss)</option>
+              <option value="Weight Gain">💪 Weight Gain (Healthy Muscle & Mass)</option>
+              <option value="Muscle & Fitness">🏋️ Muscle & Fitness Conditioning</option>
+              <option value="Diet Planning">🥗 Personalized Diet & Nutrition Plan</option>
+              <option value="Lifestyle & Stress">🧘 Lifestyle & Hormonal Balance</option>
+              <option value="Online Follow-up">📱 1-on-1 Daily WhatsApp Coaching</option>
+              <option value="General Consultation">💬 General Health Consultation</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="popCurrentWeight">Current Weight (kg)</label>
+              <input type="text" id="popCurrentWeight" class="form-input" placeholder="e.g. 78 kg">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="popTargetWeight">Target Weight (kg)</label>
+              <input type="text" id="popTargetWeight" class="form-input" placeholder="e.g. 68 kg">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="popTime">Best Time for Call / WhatsApp Chat</label>
+            <select id="popTime" class="form-select">
+              <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+              <option value="Afternoon (12 PM - 5 PM)">Afternoon (12 PM - 5 PM)</option>
+              <option value="Evening (5 PM - 9 PM)">Evening (5 PM - 9 PM)</option>
+              <option value="Immediate WhatsApp Message">Immediate WhatsApp Message</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="popNote">Message / Any Health Issue (Optional)</label>
+            <textarea id="popNote" class="form-textarea" rows="2" placeholder="Tell Coach about your routine, food taste, or health history..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-wa btn-full">
+            <span>💬</span> Send Details on WhatsApp to Coach
+          </button>
+
+          <div class="modal-footer-note">
+            <span>🔒</span> 100% Confidential. Directly opens WhatsApp with +91 70771 73628.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FULLSCREEN LIGHTBOX MODAL WITH NEXT/PREV & SWIPE CONTROLS
+       ========================================================================== -->
+  <div class="lightbox-overlay" id="lightboxModal" onclick="closeLightbox(event)">
+    <button class="lightbox-close-btn" aria-label="Close Lightbox" onclick="forceCloseLightbox()">
+      &times;
+    </button>
+    <button class="lightbox-nav-btn lightbox-prev-btn" aria-label="Previous Photo" onclick="prevLightbox(event)">
+      ‹
+    </button>
+    <button class="lightbox-nav-btn lightbox-next-btn" aria-label="Next Photo" onclick="nextLightbox(event)">
+      ›
+    </button>
+
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img src="" alt="Enlarged Preview" id="lightboxImg" class="lightbox-img">
+      <div class="lightbox-meta">
+        <span class="lightbox-counter" id="lightboxCounter">Photo 1 of 20</span>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <div style="margin-top: 10px;">
+          <button class="btn btn-wa btn-sm" onclick="chatAboutCurrentPhoto()">
+            💬 Inquire About This Result on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MOBILE STICKY BOTTOM BAR (PHONE OPTIMIZED)
+       ========================================================================== -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-bar-inner">
+      <button class="btn btn-primary btn-sm" onclick="openModal('Weight Loss')">
+        🔥 Free Consultation
+      </button>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/917077173628?text=Hello%20Purusottam%20Meher,%20I%20want%20to%20know%20more%20about%20your%20coaching!" target="_blank" rel="noopener">
+        💬 WhatsApp Coach
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING WHATSAPP (DESKTOP)
+       ========================================================================== -->
+  <a class="floating-wa-btn" href="https://wa.me/917077173628?text=Hello%20Purusottam%20Meher,%20I%20am%20interested%20in%20your%20Wellness%20Coaching.%20Please%20guide%20me!" target="_blank" rel="noopener" aria-label="Direct WhatsApp Chat with Coach">
+    💬
+  </a>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>🌿 Purusottam Meher</h3>
+          <p>
+            Certified Wellness Coach specializing in sustainable Weight Loss, healthy Weight Gain, customized daily nutrition, and 1-on-1 habit coaching.
+          </p>
+          <div class="footer-contact-item">
+            <span>📱</span> <strong>WhatsApp:</strong> <a href="https://wa.me/917077173628" target="_blank" rel="noopener" style="color: #34d399;">+91 70771 73628</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span> <strong>Email:</strong> <a href="mailto:purumeher3628@gmail.com" style="color: #34d399;">purumeher3628@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Coaching Programs</h4>
+          <ul class="footer-links">
+            <li><a href="#services" onclick="openModal('Weight Loss')">Weight Loss & Inch Loss</a></li>
+            <li><a href="#services" onclick="openModal('Weight Gain')">Weight Gain & Muscle Build</a></li>
+            <li><a href="#services" onclick="openModal('Diet Planning')">Customized Meal Plans</a></li>
+            <li><a href="#services" onclick="openModal('Muscle & Fitness')">Home / Gym Workout Routines</a></li>
+            <li><a href="#services" onclick="openModal('Lifestyle & Stress')">Lifestyle & Sleep Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Meet Coach Purusottam</a></li>
+            <li><a href="#reviews">Real Client Transformations</a></li>
+            <li><a href="#bmi">BMI Health Calculator</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#book">Book 1-on-1 Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Purusottam Meher – Certified Wellness Coach. All rights reserved.</p>
+        <p style="margin-top: 6px; font-size: 11px;">Disclaimer: Health and wellness advice provided is for lifestyle, nutrition, and fitness improvement and is not a medical prescription.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT: POPUP, WHATSAPP REDIRECTION, ANIMATIONS, BMI & LIGHTBOX
+       ========================================================================== -->
+  <script>
+    const COACH_PHONE = "917077173628";
+    let lastBmiText = "";
+
+    // -------------------------------------------------------------
+    // REVIEW PHOTO DATASET (FOR LIGHTBOX NEXT/PREV & CAPTIONS)
+    // -------------------------------------------------------------
+    const reviewPhotos = [
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.02 PM.jpeg", caption: "Weight Loss Transformation – Client Success", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.03 PM (1).jpeg", caption: "WhatsApp Review – Happy Client Chat", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.03 PM.jpeg", caption: "Fat Loss & Inch Loss Progress", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.04 PM.jpeg", caption: "Full Body Transformation", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.04 PM (1).jpeg", caption: "Weight Gain & Muscle Progress", cat: "gain" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.04 PM (2).jpeg", caption: "Belly Fat Loss Success", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.05 PM.jpeg", caption: "Client Feedback & Rating", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.05 PM (1).jpeg", caption: "Weight Loss Journey Progress", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.05 PM (2).jpeg", caption: "Healthy Body Transformation", cat: "gain" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.06 PM.jpeg", caption: "WhatsApp Follow-up Review", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.06 PM (1).jpeg", caption: "Weight Loss Milestone", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.49 PM.jpeg", caption: "Client Review Chat", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.49 PM (1).jpeg", caption: "WhatsApp Gratitude Chat", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.50 PM.jpeg", caption: "Body Fat Reduction Chat", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.25.50 PM (1).jpeg", caption: "Transformation Progress Chat", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.26.37 PM.jpeg", caption: "Major Weight Loss Transformation", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.27.01 PM.jpeg", caption: "Client WhatsApp Story", cat: "chat" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.27.58 PM.jpeg", caption: "Client Success Story", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.29.08 PM.jpeg", caption: "Weight Loss Breakthrough", cat: "loss" },
+      { src: "rev/WhatsApp Image 2026-11-25 at 6.30.13 PM.jpeg", caption: "Overall Health & Fitness Transformation", cat: "gain" }
+    ];
+
+    let currentPhotoIndex = 0;
+
+    // -------------------------------------------------------------
+    // WHATSAPP REDIRECTION HELPER
+    // -------------------------------------------------------------
+    function sendToWhatsApp(messageText) {
+      const url = "https://wa.me/" + COACH_PHONE + "?text=" + encodeURIComponent(messageText);
+      window.open(url, "_blank");
+    }
+
+    // -------------------------------------------------------------
+    // MOBILE MENU TOGGLE
+    // -------------------------------------------------------------
+    function toggleMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const toggle = document.getElementById("mobileToggle");
+      navLinks.classList.toggle("open");
+      toggle.innerHTML = navLinks.classList.contains("open") ? "✕" : "☰";
+    }
+
+    function closeMobileMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const toggle = document.getElementById("mobileToggle");
+      navLinks.classList.remove("open");
+      toggle.innerHTML = "☰";
+    }
+
+    // -------------------------------------------------------------
+    // POP-UP MODAL LOGIC (OPEN / CLOSE / AUTO-POPUP)
+    // -------------------------------------------------------------
+    const popupModal = document.getElementById("popupModal");
+
+    function openModal(defaultService) {
+      if (defaultService) {
+        const select = document.getElementById("popService");
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.toLowerCase().includes(defaultService.toLowerCase()) || 
+              defaultService.toLowerCase().includes(select.options[i].value.toLowerCase())) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      popupModal.classList.add("active");
+      document.body.style.overflow = "hidden"; // Prevent background scroll
+    }
+
+    function closeModal() {
+      popupModal.classList.remove("active");
+      document.body.style.overflow = "";
+      sessionStorage.setItem("modalClosedByUser", "true");
+    }
+
+    // Close when clicking outside modal box
+    popupModal.addEventListener("click", function(e) {
+      if (e.target === popupModal) {
+        closeModal();
+      }
+    });
+
+    // Close on Escape key press
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape") {
+        if (popupModal.classList.contains("active")) closeModal();
+        if (document.getElementById("lightboxModal").classList.contains("active")) forceCloseLightbox();
+      } else if (e.key === "ArrowLeft") {
+        if (document.getElementById("lightboxModal").classList.contains("active")) prevLightbox();
+      } else if (e.key === "ArrowRight") {
+        if (document.getElementById("lightboxModal").classList.contains("active")) nextLightbox();
+      }
+    });
+
+    // Auto show modal after 4.5 seconds if user hasn't closed it before in this session
+    window.addEventListener("load", function() {
+      setTimeout(function() {
+        if (!sessionStorage.getItem("modalClosedByUser") && !sessionStorage.getItem("formSubmitted")) {
+          openModal("Weight Loss");
+        }
+      }, 4500);
+    });
+
+    // -------------------------------------------------------------
+    // POP-UP FORM SUBMISSION -> WHATSAPP REDIRECTION
+    // -------------------------------------------------------------
+    function handlePopupSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("popName").value.trim();
+      const phone = document.getElementById("popPhone").value.trim();
+      const service = document.getElementById("popService").value;
+      const currentWeight = document.getElementById("popCurrentWeight").value.trim() || "Not specified";
+      const targetWeight = document.getElementById("popTargetWeight").value.trim() || "Not specified";
+      const preferredTime = document.getElementById("popTime").value;
+      const note = document.getElementById("popNote").value.trim() || "None";
+
+      if (!name || phone.replace(/\D/g, "").length < 8) {
+        alert("Please provide your full name and a valid contact number.");
+        return;
+      }
+
+      const message = 
+`🌿 *NEW CONSULTATION INQUIRY* 🌿
+━━━━━━━━━━━━━━━━━━━━
+👤 *Name:* ${name}
+📱 *Phone:* ${phone}
+🎯 *Service / Goal:* ${service}
+⚖️ *Current Weight:* ${currentWeight}
+🏁 *Target Weight:* ${targetWeight}
+⏰ *Preferred Time:* ${preferredTime}
+📝 *Note / Health Info:* ${note}
+━━━━━━━━━━━━━━━━━━━━
+_Sent via Purusottam Meher Wellness Coach Website_`;
+
+      sessionStorage.setItem("formSubmitted", "true");
+      closeModal();
+      sendToWhatsApp(message);
+    }
+
+    // -------------------------------------------------------------
+    // ON-PAGE BOOKING FORM SUBMISSION -> WHATSAPP REDIRECTION
+    // -------------------------------------------------------------
+    function handleOnpageSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("bookName").value.trim();
+      const phone = document.getElementById("bookPhone").value.trim();
+      const goal = document.getElementById("bookGoal").value;
+      const time = document.getElementById("bookTime").value;
+      const currentWeight = document.getElementById("bookWeight").value.trim() || "Not specified";
+      const targetWeight = document.getElementById("bookTarget").value.trim() || "Not specified";
+      const messageText = document.getElementById("bookMessage").value.trim() || "None";
+
+      if (!name || phone.replace(/\D/g, "").length < 8) {
+        alert("Please provide your name and a valid phone number.");
+        return;
+      }
+
+      const formattedMsg = 
+`🌿 *NEW CONSULTATION BOOKING* 🌿
+━━━━━━━━━━━━━━━━━━━━
+👤 *Name:* ${name}
+📱 *Phone:* ${phone}
+🎯 *Goal / Program:* ${goal}
+⚖️ *Current Weight:* ${currentWeight}
+🏁 *Target Weight:* ${targetWeight}
+⏰ *Preferred Time:* ${time}
+📝 *Message:* ${messageText}
+━━━━━━━━━━━━━━━━━━━━
+_Sent via Purusottam Meher Website_`;
+
+      sendToWhatsApp(formattedMsg);
+    }
+
+    // -------------------------------------------------------------
+    // BMI CALCULATOR LOGIC
+    // -------------------------------------------------------------
+    function calculateBMI() {
+      const hInput = parseFloat(document.getElementById("calcHeight").value);
+      const wInput = parseFloat(document.getElementById("calcWeight").value);
+      const goalInput = document.getElementById("calcGoal").value;
+
+      const numEl = document.getElementById("bmiNumber");
+      const catEl = document.getElementById("bmiCategory");
+      const tipEl = document.getElementById("bmiTip");
+      const dotEl = document.getElementById("bmiDot");
+      const shareBtn = document.getElementById("bmiShareBtn");
+
+      if (!hInput || !wInput || hInput < 50 || hInput > 260 || wInput < 15 || wInput > 250) {
+        catEl.textContent = "Please enter valid height & weight";
+        tipEl.textContent = "Height should be in cm (e.g. 170) and weight in kg (e.g. 70).";
+        return;
+      }
+
+      const heightM = hInput / 100;
+      const bmi = wInput / (heightM * heightM);
+      const bmiRounded = bmi.toFixed(1);
+      numEl.textContent = bmiRounded;
+
+      let category = "";
+      let advice = "";
+      let dotPercent = 0;
+
+      if (bmi < 18.5) {
+        category = "Underweight";
+        advice = "You need a calorie-dense, nutritious weight-gain plan to build lean muscle mass, improve immunity, and strengthen energy.";
+        dotPercent = Math.min(18, (bmi / 18.5) * 18);
+        numEl.style.color = "#60a5fa";
+      } else if (bmi < 25) {
+        category = "Normal / Healthy Weight";
+        advice = "Great job! You are in a healthy range. Our fitness & tone program will help you build muscle definition, stamina, and agility.";
+        dotPercent = 18 + ((bmi - 18.5) / 6.5) * 32;
+        numEl.style.color = "#34d399";
+      } else if (bmi < 30) {
+        category = "Overweight";
+        advice = "A sustainable weight loss & nutrition program can help you burn excess fat, shed inches, and restore optimal metabolism.";
+        dotPercent = 50 + ((bmi - 25) / 5) * 25;
+        numEl.style.color = "#f59e0b";
+      } else {
+        category = "Obese Range";
+        advice = "Guided 1-on-1 coaching with customized nutrition and habit support is recommended to steadily and safely reduce weight.";
+        dotPercent = Math.min(98, 75 + ((bmi - 30) / 10) * 23);
+        numEl.style.color = "#ef4444";
+      }
+
+      catEl.textContent = category;
+      tipEl.textContent = advice;
+      dotEl.style.left = dotPercent + "%";
+      shareBtn.style.display = "inline-flex";
+
+      lastBmiText = `BMI: ${bmiRounded} (${category}), Height: ${hInput} cm, Weight: ${wInput} kg. Goal: ${goalInput}`;
+    }
+
+    function shareBmiWhatsApp() {
+      if (!lastBmiText) return;
+      const msg = 
+`Hello Coach Purusottam Meher,
+I calculated my BMI on your website:
+📊 ${lastBmiText}
+
+I would like to get a personalized consultation plan to reach my goal!`;
+      sendToWhatsApp(msg);
+    }
+
+    // -------------------------------------------------------------
+    // FULLSCREEN LIGHTBOX WITH NEXT/PREV & TOUCH SWIPE
+    // -------------------------------------------------------------
+    const lightboxModal = document.getElementById("lightboxModal");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxCounter = document.getElementById("lightboxCounter");
+
+    function openLightboxByIndex(index) {
+      currentPhotoIndex = index;
+      renderLightboxImage();
+      lightboxModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function openLightboxBySrc(src, title) {
+      lightboxImg.src = src;
+      lightboxCaption.textContent = title || "Coach Purusottam Meher";
+      lightboxCounter.textContent = "Featured Photo";
+      lightboxModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function renderLightboxImage() {
+      if (currentPhotoIndex < 0) currentPhotoIndex = reviewPhotos.length - 1;
+      if (currentPhotoIndex >= reviewPhotos.length) currentPhotoIndex = 0;
+
+      const photo = reviewPhotos[currentPhotoIndex];
+      lightboxImg.style.opacity = "0";
+      setTimeout(() => {
+        lightboxImg.src = photo.src;
+        lightboxCaption.textContent = photo.caption;
+        lightboxCounter.textContent = `Review ${currentPhotoIndex + 1} of ${reviewPhotos.length}`;
+        lightboxImg.style.opacity = "1";
+      }, 150);
+    }
+
+    function nextLightbox(e) {
+      if (e) e.stopPropagation();
+      currentPhotoIndex++;
+      renderLightboxImage();
+    }
+
+    function prevLightbox(e) {
+      if (e) e.stopPropagation();
+      currentPhotoIndex--;
+      renderLightboxImage();
+    }
+
+    function forceCloseLightbox() {
+      lightboxModal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal) forceCloseLightbox();
+    }
+
+    function chatAboutCurrentPhoto() {
+      const caption = lightboxCaption.textContent || "your client results";
+      const msg = `Hello Coach Purusottam, I saw this transformation/review on your website ("${caption}") and would love to achieve similar results!`;
+      sendToWhatsApp(msg);
+    }
+
+    // Mobile Swipe Gesture Support for Lightbox
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    lightboxModal.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightboxModal.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipeGesture();
+    }, { passive: true });
+
+    function handleSwipeGesture() {
+      const swipeDistance = touchEndX - touchStartX;
+      if (Math.abs(swipeDistance) > 45) {
+        if (swipeDistance < 0) {
+          nextLightbox(); // Swiped left -> next
+        } else {
+          prevLightbox(); // Swiped right -> prev
+        }
+      }
+    }
+
+    // -------------------------------------------------------------
+    // REVIEW FILTER LOGIC
+    // -------------------------------------------------------------
+    function filterReviews(category, btnElement) {
+      document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+      btnElement.classList.add("active");
+
+      const items = document.querySelectorAll(".review-masonry-item");
+      items.forEach(item => {
+        const itemCat = item.getAttribute("data-category");
+        if (category === "all" || itemCat === category) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+
+    // -------------------------------------------------------------
+    // SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+    // -------------------------------------------------------------
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -30px 0px"
+    };
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll(".reveal").forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // -------------------------------------------------------------
+    // NAVBAR BLUR & SHADOW ON SCROLL
+    // -------------------------------------------------------------
+    window.addEventListener("scroll", () => {
+      const navbar = document.getElementById("navbar");
+      if (window.scrollY > 30) {
+        navbar.style.background = "rgba(7, 15, 12, 0.96)";
+        navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.45)";
+      } else {
+        navbar.style.background = "rgba(7, 15, 12, 0.88)";
+        navbar.style.boxShadow = "none";
+      }
+    });
+  </script>
+</body>
+</html>
